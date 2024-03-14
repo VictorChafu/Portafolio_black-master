@@ -17,11 +17,11 @@
             <ul>
                 <li><a href="#me">Sobre mi</a></li>
                 <li><a href="#project">Proyectos</a></li>
-                <li><a href="contact">Contacto</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
             <a href="https://github.com/VictorChafu" target="_blank"><i class="fa-brands fa-2x fa-github"></i></a>
         </nav>
-        <div class="container">
+        <div  class="container">
             <div class="tittle">
                 <h1 class="color-change-3x"><span>Hola, soy&nbsp;</span> <span style="color: #27c0a7;">Victor&nbsp;</span><span>Ulloa</span></h1> <!--&nbsp; sirve para dejar un espacio-->
             <p class="design">Programador & Diseñador Web</p>
@@ -32,7 +32,7 @@
     </header>
     
     <main>
-        <section class="sobre-mi">
+        <section id="me" class="sobre-mi">
                 <h2 >Sobre Mí</h2>
                 <a href="https://laboral.inacap.cl/update-cv#/"><i class="fa-solid fa-2x fa-file fa-bounce"></i></a>
         </section> 
@@ -42,7 +42,7 @@
         
         <div class="color-change-2x ">
             <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C261.00,39.97 340.57,-27.11 498.02,20.23 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #e4e4e4;"></path></svg></div>
-        <section class="proyecto1">
+        <section id="project" class="proyecto1">
             <div class="project1">
                 <h2>Sensor4air</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, corrupti esse vel iure eos laudantium quibusdam consequuntur optio expedita. Sint aut neque consequuntur non .</p>
@@ -75,14 +75,61 @@
             
             
         </div>
-        
         </section>
-        <section class="contactame">
-            <div class="container">
-                <h2>Contacto</h2>
-                <p>¿Interesado en trabajar juntos? No dudes en contactarme a <a href="mailto:email@ejemplo.com">email@ejemplo.com</a>.</p>
+
+        <section class="contactame" >
+        <div id="contact" class="correo">
+            <h2>Contactame</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="type">Selecciona tu tipo:</label>
+                    <select id="type" name="type">
+                        <option value="empresa">Empresa</option>
+                        <option value="pyme">PYME</option>
+                        <option value="particular">Persona Particular</option>
+                    </select>
+            </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <section class="sec">
+            <div class="flogo" >
+                <img src="./img/logo/WeDe.png" alt="">
+            </div>
+
+            <div class="flink">
+                <ul>
+                    <li><a href="">inicio</a></li>
+                    <li><a href="">contacto</a></li>
+                    <li><a href="">proyectos</a></li>
+                </ul>
+            </div>
+            <div class="flink">
+                <ul>
+                    <li><a href="">inicio</a></li>
+                    <li><a href="">contacto</a></li>
+                    <li><a href="">proyectos</a></li>
+                </ul>
+            </div>
+            <div class="flink">
+                <ul>
+                    <li><a href="">inicio</a></li>
+                    <li><a href="">contacto</a></li>
+                    <li><a href="">proyectos</a></li>
+                </ul>
+            </div>
+
+            <div class="fsociales">
+
             </div>
         </section>
-    </main>
+    </footer>
 </body>
 </html>
