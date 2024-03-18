@@ -305,6 +305,7 @@ main{
 }
 @media (max-width:900px){
     .proyecto1{
+        height: 60vh;
         display: flex;
         flex-direction: column;
 
@@ -337,6 +338,7 @@ main{
 @media (max-width:900px){
     .project1 {
         display: flex;
+        align-items: center;
         padding: 0;
     }
 }
@@ -357,7 +359,8 @@ main{
 }
 @media (max-width:900px){
     .project1 p{
-        padding: 0;
+        padding: 10px 30px;
+        text-align: center;
     }
 }
 .proyecto1 a{
