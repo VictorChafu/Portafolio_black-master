@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -37,6 +37,12 @@ header {
         padding-top: 40vh;
     }
 
+}
+@media (max-width:900px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
 }
 .color-change-2x {
 	-webkit-animation: color-change-2x 2s linear infinite alternate both;
@@ -133,6 +139,60 @@ h1 {
         exit 0% exit 100%,
         exit 50% exit 90%;
 }
+
+
+.hamburger{
+    position: fixed; /*Se mantenga fijo aunque se haga scroll*/
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transform: translate(200%);
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgb(0, 0, 0,.5);
+}
+.menu-navegation{
+}
+@media (max-width:900px){
+
+.hamburger{
+    z-index: 10;
+    position: fixed; /*Se mantenga fijo aunque se haga scroll*/
+    top: 19px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transform: translate(0%);
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgb(0, 0, 0,.5);
+}
+    .menu-navegation{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 78px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgb(0, 0, 0, 5.)
+    }
+}
+.menu-navegation a{
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+}
+.spread{
+    transform: translate(0);
+}
+.menu-navegation a:hover{
+    background-color: #572ab1;
+    padding: 20px;
+    border-radius: 4px;
+}
 /**--------fin estilo apple-------*/
 
 
@@ -188,6 +248,11 @@ nav li :hover{
 nav a{
     color: #fff;
     text-decoration: none;
+}
+@media (max-width:900px){
+    nav a{
+        padding-right: 30px;
+    }
 }
 
 .fa-brands, .fa-github{
@@ -531,4 +596,16 @@ footer ul li a{
 
 footer li{
     list-style: none;
+}
+@media screen and (max-width:800px){
+    .menu-navegation{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-navegation a:hover{
+        background-color: black;
+        z-index: 10;
+    }
+
 }
