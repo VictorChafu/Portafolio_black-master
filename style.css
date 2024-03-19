@@ -179,12 +179,16 @@ h1 {
     transform: translate(110%);
     box-shadow: 0 0 6px rgb(0, 0, 0, 5.)
     }
+    .fa-brands{
+        padding-right: 20px;
+    }
 }
 .menu-navegation a{
     margin: 20px;
     color: white;
     text-decoration: none;
 }
+
 .spread{
     transform: translate(0);
 }
@@ -235,8 +239,12 @@ nav ul li{
     list-style: none;
 }
 @media (max-width:900px){
+    nav ul{
+        padding-right: 0;
+    }
     nav ul li{
-        font-size: 10px;  
+        font-size: 15px;  
+        padding: 0;
     }
 }
 nav li :hover{
@@ -251,7 +259,7 @@ nav a{
 }
 @media (max-width:900px){
     nav a{
-        padding-right: 30px;
+        padding-right: 0;
     }
 }
 
@@ -599,7 +607,6 @@ footer li{
 }
 @media screen and (max-width:800px){
     .menu-navegation{
-        height: 100%;
     }
     .menu-navegation a:hover{
         background-color: black;
