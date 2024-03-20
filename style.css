@@ -9,10 +9,6 @@ body {
     width: 100%;
     color: #fff;
 }
-@media (max-width:700px){
-    body{
-    }
-}
 
 header {
     width: 100%;
@@ -123,20 +119,7 @@ h1 {
     to {opacity: 0;}
 }
 /**--------darle estilo apple-------*/
-.tittle p:first-child{
-    animation: fade-away both linear;
-    animation-timeline: --scroll;
-    animation-range: exit 30% exit 100%;
-}
-.tittle p:last-child{
-    animation:
-        scale-up both ease-in-out,
-        fade-away both linear;
-    animation-timeline: --scroll;
-    animation-range:
-        exit 0% exit 100%,
-        exit 50% exit 90%;
-}
+
 
 
 .hamburger{
@@ -174,7 +157,7 @@ h1 {
     justify-content: center;
     align-items: center;
     transition: transform .3s ease-in-out;
-    transform: translate(110%);
+    transform: translate(2000%);
     box-shadow: 0 0 6px rgb(0, 0, 0, 5.)
     }
     .fa-brands{
@@ -543,9 +526,9 @@ main{
 }
 
 .correo {
-    width: 60vh;
+    width: 100%;
     background-color: #ededed;
-    padding: 20px;
+    padding: 100px;
     border-radius: 5px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
 }
