@@ -9,6 +9,11 @@ body {
     width: 100%;
     color: #fff;
 }
+@media (max-width:700px){
+    body{
+        width:200%;
+    }
+}
 
 header {
     width: 100%;
@@ -267,6 +272,13 @@ margin-right: 40px;
     bottom: 0;
     width: 100%;
 }
+@media (max-width:900px){
+
+
+    .wave{
+     width: 200%;
+}
+}
 main{
     width: 100%;
 }
@@ -427,7 +439,7 @@ main{
 }
 @media (max-width:900px){
     .project1 p{
-        padding: 10px 30px;
+        padding: 10px 80px;
         text-align: center;
     }
 }
@@ -464,11 +476,12 @@ main{
     .proyecto2{
         padding: 0;
         height: 120vh;
+        padding-top: 1vh ;
     }
 }
 @media (max-width:900px){
     .proyecto2{
-    padding-top: 10vh ;
+    
     }
 }
 .proyecto2 h2{
@@ -604,13 +617,4 @@ footer ul li a{
 
 footer li{
     list-style: none;
-}
-@media screen and (max-width:800px){
-    .menu-navegation{
-    }
-    .menu-navegation a:hover{
-        background-color: black;
-        z-index: 10;
-    }
-
 }
